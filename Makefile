@@ -40,3 +40,7 @@ locale/hidetopbar.pot locale/hidetopbar.pot-stamp : $(UI_FILES)
 	sed -i "2s/.*/# Copyright (C) $$(date +%Y) Thomas Vogt/" locale/hidetopbar.pot
 	sed -i '17s/CHARSET/UTF-8/' locale/hidetopbar.pot
 	touch locale/hidetopbar.pot-stamp
+
+install:
+	rm -rf ~/.local/share/gnome-shell/extensions/hidetopbar@mathieu.bidon.ca
+	unzip hidetopbar.zip -d ~/.local/share/gnome-shell/extensions/hidetopbar@mathieu.bidon.ca
