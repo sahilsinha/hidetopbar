@@ -43,7 +43,7 @@ extensions directory, compile by running `make`, install and restart GNOME Shell
 cd ~/src
 git clone https://gitlab.gnome.org/tuxor1337/hidetopbar.git
 cd hidetopbar
-# make clean # if already built applicable
+# make clean # if already built
 make
 make install
 ```
