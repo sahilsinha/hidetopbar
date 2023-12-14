@@ -39,13 +39,14 @@ distribution) are required.
 The procedure to install from source is as follows: Check out the source code into your local
 extensions directory, compile by running `make`, install and restart GNOME Shell. For example:
 
-    cd ~/.local/share/gnome-shell/extensions/
-    git clone https://gitlab.gnome.org/tuxor1337/hidetopbar.git hidetopbar@mathieu.bidon.ca
-    cd hidetopbar@mathieu.bidon.ca
-    make
-    cd ..
-    gnome-extensions enable hidetopbar@mathieu.bidon.ca
-    gnome-shell --replace &
+```sh
+cd ~/src
+git clone https://gitlab.gnome.org/tuxor1337/hidetopbar.git
+cd hidetopbar
+# make clean # if already built
+make
+make install
+```
 
 The last command restarts GNOME Shell in X11, but it won't work under Wayland. You might
 need to log off and on again for the install procedure to take effect under Wayland.
